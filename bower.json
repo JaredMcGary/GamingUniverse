@@ -1,0 +1,20 @@
+{
+  "name": "GamingUniverse",
+  "main": "index.js",
+  "homepage": "https://github.com/JaredMcGary/GamingUniverse",
+  "authors": [
+    "Jared McGary <jared4mcgary@gmail.com>"
+  ],
+  "description": "Game Library",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
+}
