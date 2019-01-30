@@ -3,12 +3,12 @@
     numz: {},
     phyz: {
      getDistance(pointA, pointB) {
-            Const
-            distanceX = pointB.x - pointA.x;
-            distanceY = pointB.y - pointA.y;
+            const
+            distanceX = pointB.x - pointA.x,
+            distanceY = pointB.y - pointA.y,
             distance = Math.sqrt(distanceX * distanceX + distanceY * distanceY);
             return distance;
-        }
+        },
       /**
        * Returns an Object with basic properties utilized in a 
        * 2D physics system. On top of simple physical properties,
