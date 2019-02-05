@@ -1,6 +1,13 @@
 (function(window, _) {
   window.GamingUniverse= window.GamingUniverse || {
-    numz: {},
+    numz: {
+      degreesToRadians: function(degrees) {
+        return degrees * Math.PI/180;
+      },
+      radiansToDegrees: function(radians) {
+        return radians * 180/Math.PI;
+      },
+    },
     phyz: {
      getDistance(pointA, pointB) {
             const
