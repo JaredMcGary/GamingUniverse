@@ -2,13 +2,22 @@
   window.GamingUniverse= window.GamingUniverse || {
     numz: {
       degreesToRadians: function(degrees) {
-        return degrees * Math.PI/180;
+        return degrees * Math.PI / 180;
       },
       radiansToDegrees: function(radians) {
-        return radians * 180/Math.PI;
+        return radians * 180 / Math.PI;
+      },
+      getAngleDegrees(pointA, pointB) {
+        const
+            distanceX = pointB.x - pointA.x,
+            distanceY = pointB.y - pointA.y,
+            radians = Math.atan2(distanceY,distanceX),
+            degrees = radians * 180 / Math.Pi;
+            return degrees;
       },
     },
     phyz: {
+    //this function should be in numz and is a number function not physical
      getDistance(pointA, pointB) {
             const
             distanceX = pointB.x - pointA.x,
