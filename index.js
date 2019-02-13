@@ -7,7 +7,7 @@
       radiansToDegrees: function(radians) {
         return radians * 180 / Math.PI;
       },
-      getAngleDegrees(pointA, pointB) {
+      getAngleDegrees: function(pointA, pointB) {
         const
             distanceX = pointB.x - pointA.x,
             distanceY = pointB.y - pointA.y,
@@ -18,7 +18,7 @@
     },
     phyz: {
     //this function should be in numz and is a number function not physical
-     getDistance(pointA, pointB) {
+     getDistance: function(pointA, pointB) {
             const
             distanceX = pointB.x - pointA.x,
             distanceY = pointB.y - pointA.y,
@@ -35,7 +35,7 @@
            * with x, y, rotation, velocityX, velocityY, and 
            * rotationalVelocity properties.
            */
-          updatePosition(body) {
+          updatePosition: function(body) {
             body.x += body.velocityX;
             body.y += body.velocityY;
             body.rotation += body.rotationalVelocity;
@@ -57,7 +57,7 @@
          * @param {Number} forceOnY: The force acting against
          * the body on the y axis.
          */
-        updateVelocity(body, forceOnX, forceOnY) {
+        updateVelocity: function(body, forceOnX, forceOnY) {
           const
             angle = body.rotation * Math.PI / 180,
             accelerationOnX  = Math.cos(angle) * forceOnX,
